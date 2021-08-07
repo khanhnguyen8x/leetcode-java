@@ -1,4 +1,4 @@
-package com.khanhnv.leet01;
+package com.khanhnv;
 
 public class Main {
 
