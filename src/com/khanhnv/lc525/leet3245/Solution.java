@@ -1,4 +1,4 @@
-package com.khanhnv.leet04;
+package com.khanhnv.lc525.leet3245;
 
 /**
  * <p>Duplicate Zeros</p>

@@ -1,4 +1,4 @@
-package com.khanhnv.leet03;
+package com.khanhnv.lc521.leet3240;
 
 import java.util.Arrays;
 

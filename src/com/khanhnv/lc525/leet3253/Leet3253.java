@@ -1,6 +1,6 @@
-package com.khanhnv.leet05;
+package com.khanhnv.lc525.leet3253;
 
-public class Leet05 {
+public class Leet3253 {
 
   public static void main(String[] args) {
 //    var nums1 = new int[]{1,2,3,0,0,0};

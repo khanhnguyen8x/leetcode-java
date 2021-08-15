@@ -1,4 +1,4 @@
-package com.khanhnv.leet02;
+package com.khanhnv.lc521.leet3237;
 
 class Solution {
 

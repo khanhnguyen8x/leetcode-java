@@ -1,9 +1,9 @@
-package com.khanhnv.leet02;
+package com.khanhnv.lc521.leet3237;
 
 /**
  * Max Consecutive Ones
  */
-public class Leet02 {
+public class Leet3237 {
 
   public static void main(String[] args) {
     var nums = new int[]{12, 345, 2, 6, 7896};
