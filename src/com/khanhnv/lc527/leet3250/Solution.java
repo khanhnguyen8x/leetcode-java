@@ -1,10 +1,29 @@
 package com.khanhnv.lc527.leet3250;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 class Solution {
 
   public boolean checkIfExist(int[] arr) {
+    if (arr.length == 0 || arr.length == 1) {
+      return false;
+    }
+    var table = new HashSet<Integer>();
+    for (int num : arr) {
+      if (table.contains(num)) {
+        return true;
+      }
+
+      table.add(num * 2);
+      if (num % 2 == 0) {
+        table.add(num / 2);
+      }
+    }
+    return false;
+  }
+
+  public boolean checkIfExist1(int[] arr) {
     if (arr.length == 0 || arr.length == 1) {
       return false;
     }
