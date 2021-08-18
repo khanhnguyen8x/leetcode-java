@@ -8,6 +8,24 @@ class Solution {
     if (arr.length == 0 || arr.length == 1) {
       return false;
     }
+    var table = new HashMap<Integer, Integer>();
+    for (int num : arr) {
+      if (table.containsKey(num)) {
+        return true;
+      }
+
+      table.put(num * 2, num);
+      if (num % 2 == 0) {
+        table.put(num / 2, num);
+      }
+    }
+    return false;
+  }
+
+  public boolean checkIfExist2(int[] arr) {
+    if (arr.length == 0 || arr.length == 1) {
+      return false;
+    }
 
     var length = arr.length;
     var table = new HashMap<String, Integer>();
