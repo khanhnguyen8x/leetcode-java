@@ -1,7 +1,5 @@
 package com.khanhnv.lc511.leet3575;
 
-import java.util.Arrays;
-
 /**
  * Max Consecutive Ones
  */

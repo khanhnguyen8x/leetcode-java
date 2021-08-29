@@ -30,3 +30,5 @@ I
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 \
 ,src/com/khanhnv/lc526/leet3247/Solution.java,3/4/3448c1f2cdaccbf75b4c27be501397d9420a35c7
+\
+,src/com/khanhnv/lc209/leet1290/Leet1290.java,5/2/52315495b71de571508640c5cb62762f492919c1
