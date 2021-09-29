@@ -25,7 +25,8 @@ public class Leet992 {
     root.right = new TreeNode(2);
 
     var solution = new Solution();
-    var result = solution.inorderTraversal(root);
+    //var result = solution.inorderTraversal(root);
+    var result = solution.inorderTraversalV2(root);
     System.out.println(Arrays.toString(result.toArray()));
   }
 }

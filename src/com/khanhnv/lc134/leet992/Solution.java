@@ -17,6 +17,7 @@ import java.util.Stack;
  */
 class Solution {
 
+
   public List<Integer> inorderTraversal(TreeNode root) {
     List<Integer> inorder = new ArrayList<>();
     if (root == null) {
@@ -39,5 +40,28 @@ class Solution {
     }
 
     return inorder;
+  }
+
+  public List<Integer> inorderTraversalV2(TreeNode root) {
+    List<Integer> inorder = new ArrayList<>();
+    if (root == null) {
+      return inorder;
+    }
+
+    inorderTraversalRecursive(root, inorder);
+
+    return inorder;
+  }
+
+  public void inorderTraversalRecursive(TreeNode root, List<Integer> inorder) {
+    if (root == null) {
+      return;
+    }
+
+    inorderTraversalRecursive(root.left, inorder);
+
+    inorder.add(root.val);
+
+    inorderTraversalRecursive(root.right, inorder);
   }
 }
