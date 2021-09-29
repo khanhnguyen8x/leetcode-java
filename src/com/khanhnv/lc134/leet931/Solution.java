@@ -1,7 +1,8 @@
 package com.khanhnv.lc134.leet931;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.Deque;
 import java.util.List;
 import java.util.Queue;
 
@@ -16,28 +17,29 @@ class Solution {
       return order;
     }
 
-    Queue<TreeNode> queue = new LinkedList<>();
+    Queue<TreeNode> queue = new ArrayDeque<>();
 
     // enqueue current root
     queue.add(root);
 
     // while there are nodes to process
     while (!queue.isEmpty()) {
-      List<Integer> orderNode = new ArrayList<>();
-      // dequeue next node
-      TreeNode node = queue.poll();
+      int queueLength = queue.size();
+      List<Integer> row = new ArrayList<>();
 
-      orderNode.add(node.val);
-      order.add(orderNode);
-
-      // enqueue child elements from next level in order
-      if (node.left != null) {
-        queue.add(node.left);
+      for (int i = 0; i < queueLength; i++) {
+        // dequeue next node
+        TreeNode node = queue.poll();
+        row.add(node.val);
+        // enqueue child elements from next level in order
+        if (node.left != null) {
+          queue.add(node.left);
+        }
+        if (node.right != null) {
+          queue.add(node.right);
+        }
       }
-
-      if (node.right != null) {
-        queue.add(node.right);
-      }
+      order.add(row);
     }
     return order;
   }
