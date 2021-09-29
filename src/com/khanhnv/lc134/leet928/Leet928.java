@@ -11,7 +11,7 @@ public class Leet928 {
 //    root.right.left = new TreeNode(3);
 
     // case 2
-//    TreeNode root = null;
+    TreeNode root = null;
 
     // case 3
 //    TreeNode root = new TreeNode(1);
@@ -21,11 +21,12 @@ public class Leet928 {
 //    root.left = new TreeNode(2);
 
     // case 5
-    TreeNode root = new TreeNode(1);
-    root.right = new TreeNode(2);
+//    TreeNode root = new TreeNode(1);
+//    root.right = new TreeNode(2);
 
     var solution = new Solution();
-    var result = solution.preorderTraversal(root);
+//    var result = solution.preorderTraversal(root);
+    var result = solution.preorderTraversalV2(root);
     System.out.println(Arrays.toString(result.toArray()));
   }
 }

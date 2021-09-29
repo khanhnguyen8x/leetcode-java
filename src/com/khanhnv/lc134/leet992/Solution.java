@@ -58,10 +58,13 @@ class Solution {
       return;
     }
 
+    // In-order traversal is to traverse the left subtree first
     inorderTraversalRecursive(root.left, inorder);
 
+    // Then visit the root
     inorder.add(root.val);
 
+    // Finally, traverse the right subtree.
     inorderTraversalRecursive(root.right, inorder);
   }
 }

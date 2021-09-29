@@ -39,4 +39,29 @@ class Solution {
 
     return preorder;
   }
+
+  public List<Integer> preorderTraversalV2(TreeNode root) {
+    List<Integer> preorder = new ArrayList<>();
+    if (root == null) {
+      return preorder;
+    }
+    preorderTraversalRecursive(root, preorder);
+
+    return preorder;
+  }
+
+  public void preorderTraversalRecursive(TreeNode root, List<Integer> preorder) {
+    if (root == null) {
+      return;
+    }
+
+    // Pre-order traversal is to visit the root first.
+    preorder.add(root.val);
+
+    // Then traverse the left subtree.
+    preorderTraversalRecursive(root.left, preorder);
+
+    // Finally, traverse the right subtree.
+    preorderTraversalRecursive(root.right, preorder);
+  }
 }
