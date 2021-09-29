@@ -21,7 +21,9 @@ public class Leet931 {
 
     var solution = new Solution();
 //    var result = solution.preorderTraversal(root);
-    var result = solution.levelOrder(root);
+    var result = solution.levelOrderSimple(root);
     System.out.println(Arrays.toString(result.toArray()));
+    var result2 = solution.levelOrder(root);
+    System.out.println(Arrays.toString(result2.toArray()));
   }
 }
